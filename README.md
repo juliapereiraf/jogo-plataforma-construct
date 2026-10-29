@@ -39,3 +39,30 @@ O cenário escolhido foi a Ilha da Queimada Grande, reserva ecológica célebre 
 ├── appmanifest.json  # Configuração de Progressive Web App
 ├── index.html        # Ponto de entrada da aplicação
 └── style.css         # Reset e contentor de visualização
+
+## Como Executar Localmente
+
+Como a aplicação depende de módulos JavaScript (`type="module"`) e Service Workers, o protocolo local `file://` é bloqueado pelas diretivas de segurança dos navegadores. É necessário utilizar um servidor HTTP local:
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/juliapereiraf/sandra-fuga-da-ilha-das-cobras.git](https://github.com/juliapereiraf/sandra-fuga-da-ilha-das-cobras.git)
+
+Aceda ao diretório:
+
+Bash
+cd sandra-fuga-da-ilha-das-cobras
+Inicie um servidor local simples:
+
+Bash
+# Com Python 3
+python -m http.server 8000
+
+# Ou utilizando a extensão Live Server no VS Code
+Aceda a http://localhost:8000 no seu navegador.
+
+Equipe de Desenvolvimento
+Projeto desenvolvido no âmbito académico por:
+
+Julia Pereira 
+Ana Clara de Jesus
